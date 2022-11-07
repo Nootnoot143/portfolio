@@ -598,7 +598,7 @@ img {
   position: absolute;
   right: 0;
   top: 1126px;
-  max-width: 900px;
+  width: 900px;
   max-height: 518px;
   opacity: 0;
   transition: all 0.1s ease 0s;
@@ -689,13 +689,15 @@ img {
     position: relative;
     right: 0px;
     top: 0px;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     opacity: 0;
     transition: all 0.1s ease 0s;
+    display: none;
     padding-top: 20px;
   }
   .media-landings__text-block3.active {
+    display: block;
     z-index: 7;
     opacity: 1;
     transition: all 0.5s ease 0.5s;
@@ -1979,8 +1981,9 @@ img {
     font-size: 28px;
     font-family: Inter;
     font-weight: 800px;
-    border: solid rgba(0, 0, 0, 0);
+    border: solid #000000;
     border-radius: 20px;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
   }
 }
