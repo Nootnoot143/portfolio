@@ -1043,7 +1043,7 @@ img {
 
 .media-banners__text-block {
   display: none;
-  z-index: 5;
+  z-index: 7;
   content: "";
   position: absolute;
   right: 0px;
@@ -1058,14 +1058,18 @@ img {
   display: flex;
 }
 
+.banners-text-block__title span {
+  font-family: "Inter";
+}
+
 .media-banners__text-block2 {
   display: none;
-  z-index: 5;
+  z-index: 7;
   content: "";
   position: absolute;
   left: 0px;
   top: 657px;
-  max-width: 900px;
+  width: 900px;
   max-height: 597px;
   transition: all 0.3s ease 0.3s;
 }
@@ -1122,9 +1126,12 @@ img {
     left: 0px;
     top: 0px;
     max-width: 900px;
-    max-height: 597px;
+    max-height: 100%;
     transition: all 0.3s ease 0.3s;
     flex: 0 0 100%;
+  }
+  .media-banners__text-block2.active {
+    display: flex;
   }
   .media-banners__img2 {
     display: none;
@@ -1180,7 +1187,7 @@ img {
 
 .media-pricetables__text-block {
   display: none;
-  z-index: 5;
+  z-index: 7;
   content: "";
   position: absolute;
   left: 0px;
@@ -1198,7 +1205,7 @@ img {
 
 .media-pricetables__text-block2 {
   display: none;
-  z-index: 5;
+  z-index: 7;
   content: "";
   position: absolute;
   right: 0px;
@@ -1229,6 +1236,7 @@ img {
   .media-pricetables__img2.active {
     display: block;
     padding-top: 40px;
+    z-index: 5;
   }
   .media-pricetables__img1 {
     flex: 0 0 100%;
@@ -1251,6 +1259,7 @@ img {
     max-width: 900px;
     max-height: 498px;
     padding-top: 20px;
+    z-index: 7;
   }
   .media-pricetables__text-block {
     display: none;
@@ -1259,9 +1268,11 @@ img {
     top: 0px;
     max-width: 900px;
     max-height: 498px;
+    z-index: 7;
   }
   .media-pricetables__img.active {
     padding-top: 20px;
+    z-index: 5;
   }
 }
 .page__contacts-bottom__container {
